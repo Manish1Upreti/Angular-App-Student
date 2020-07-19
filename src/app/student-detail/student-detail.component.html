@@ -1,0 +1,16 @@
+<div class="container" *ngIf="student">
+    <div class="row">
+      <h2>{{student.name | uppercase}} Details</h2>
+      <br/><br/>
+      
+      <ul>
+        <!-- <input [(ngModel)]="selectedStudent.name" placeholder="name"> -->
+        <li> Name: {{student.name}}</li>
+          <!-- <input [(ngModel)]="selectedStudent.mobileno" placeholder="mobileno"> -->
+        <li>Mobile No. : {{student.mobileno}}</li>
+          <!-- <input [(ngModel)]="selectedStudent.email" placeholder="email">  -->
+        <li>Email: {{student.email}}</li>
+      </ul>
+    </div>
+  </div>
+  <button (click)="goBack()">go back</button>
